@@ -7,7 +7,7 @@ test("d1 - window size 1", async () => {
 
 test("d1 - window size 1 - guess", async () => {
     const test = computeIncreasingGround("input.txt", 1);
-    expect(typeof test).toEqual("number")
+    expect(test).toEqual(1548)
     console.log("part1", test)
 })
 
@@ -18,6 +18,5 @@ test("d1 - window size 3", async () => {
 
 test("d1 - window size 3 - guess", async () => {
     const test = computeIncreasingGround("input.txt", 3);
-    expect(typeof test).toEqual("number")
-    console.log("part2", test)
+    expect(test).toEqual(1589)
 })
