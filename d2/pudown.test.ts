@@ -19,5 +19,5 @@ test("d2 - whats that position w/aim", async () => {
 test("d2 - whats that position w/aim - real talk", async () => {
     const val = upDownForward("input.txt", true);
     console.log("d2 p1", val);
-    expect(val).not.toEqual(150);
+    expect(val).toEqual(2044620088);
 })
