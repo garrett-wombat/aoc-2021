@@ -2,7 +2,7 @@
 import fs from "fs";
 import { join } from "path";
 
-export const upDownForward = (path: string, withAim?: boolean ): number => {
+export const d2 = (path: string, withAim?: boolean ): number => {
         let depth = 0;
         let forward = 0;
         let aim = 0;
@@ -28,15 +28,17 @@ export const upDownForward = (path: string, withAim?: boolean ): number => {
                     aim += Number(amount);
                     break;
                 }
-                default: {
+                case "forward": {
                     if( withAim){
                         depth += (aim * Number(amount));
                     } 
                     forward += Number(amount);
                     break;
                 }
+                default:{
+                    throw `unknown command: ${command}`
+                }   
             }
-            // console.log(command,amount, aim, forward, depth)
         }
         return depth * forward;
 }
