@@ -2,13 +2,12 @@
 import fs from "fs";
 import { join } from "path";
 
-
 // we could definitely improve this
 // - make only one window and compare to prev value.
 // - just save values dont create array.
 // - dont use ts
 
-export const computeIncreasingGround = (path: string, windowSize: number = 3): number => {
+export const d1 = (path: string, windowSize: number = 3): number => {
         let count = 0;
         let windowB = [];
         let windowBSum =  0;
@@ -53,8 +52,4 @@ export const computeIncreasingGround = (path: string, windowSize: number = 3): n
         }
         // console.log(count)
         return count;
-
 }
-
-
-
