@@ -19,5 +19,5 @@ test("d3 - Why so much text", async () => {
 test("d3 - this puzzle is dumb", async () => {
     const val = d4_2("input.txt");
     console.log("d4 p2", val);
-    expect(val).toEqual(3379326);
+    expect(val).toEqual(25925);
 })

@@ -8,7 +8,7 @@ const toBackwardsBit = (bit: number, len: number): number => {
     const bitString = bit.toString(2);
     let appendZeros = "";
     
-    console.log({bitString, le:bitString.length, len})
+    // console.log({bitString, le:bitString.length, len})
     if( bitString.length < len){
          appendZeros = Array(len - bitString.length).fill(0).join("");
     } 
@@ -94,7 +94,7 @@ export const d3_2 = (path: string): number => {
 
         co2Bit = toBackwardsBit(filteredEntries[0], bitLength)
 
-        console.log(co2Bit, o2)
+        // console.log(co2Bit, o2)
         return co2Bit*o2
 
 
@@ -114,7 +114,7 @@ export const d3 = (path: string ) => {
         for(let i=0; i < entryLength; i++){
             let testBit = 1;
             let currentBit = toBit(entries[i]);
-            console.log(entries[i], currentBit, currentBit.toString(2) )
+            // console.log(entries[i], currentBit, currentBit.toString(2) )
             for( let j = 0; j <= entries[i].length; j++){
                 if( (testBit & currentBit) === testBit){
                     if(!bitMap[testBit]){
@@ -127,7 +127,7 @@ export const d3 = (path: string ) => {
             }
         }
         
-        console.log(bitMap)
+        // console.log(bitMap)
 
         Object.entries(bitMap).forEach(([key, ent]: [string, number]) => {
             if(ent < (entryLength / 2)){
@@ -139,6 +139,6 @@ export const d3 = (path: string ) => {
         // WTF - counting the bit convention has changed in the last step????
         const g = gammaBit.toString(2);
         const e = eBit.toString(2);
-        console.log({gammaBit, eBit}, toBackwardsBit(gammaBit, bitLength),  toBackwardsBit(eBit, bitLength), gammaBit * eBit)
+        // console.log({gammaBit, eBit}, toBackwardsBit(gammaBit, bitLength),  toBackwardsBit(eBit, bitLength), gammaBit * eBit)
         return toBackwardsBit(gammaBit, bitLength) * toBackwardsBit(eBit, bitLength);
 }
