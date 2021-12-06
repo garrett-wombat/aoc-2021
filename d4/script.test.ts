@@ -7,7 +7,7 @@ test("d4 - FIN", async () => {
 
 test("d4 - third first try ", async () => {
     const val = d4("input.txt");
-    console.log("d4 p1", val);
+    // console.log("d4 p1", val);
     expect(val).toEqual(2496);
 })
 
@@ -18,6 +18,6 @@ test("d3 - Why so much text", async () => {
 
 test("d3 - this puzzle is dumb", async () => {
     const val = d4_2("input.txt");
-    console.log("d4 p2", val);
+    // console.log("d4 p2", val);
     expect(val).toEqual(25925);
 })

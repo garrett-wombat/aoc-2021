@@ -118,7 +118,7 @@ export const d4_2 = (path: string) => {
                 winningBoards.push(winner)
                 // just save the last won board
                 if( winningBoards.length === allBoards.length){
-                    console.log(board, board.scoreBoard(), chosenOne)
+                    // console.log(board, board.scoreBoard(), chosenOne)
                     lastWinner = winner
                 }
             }

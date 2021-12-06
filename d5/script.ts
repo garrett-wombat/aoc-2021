@@ -84,7 +84,7 @@ export const d5 = (path: string) => {
         const [p,t] = getLineEnds(line as string);
         vents.registerLine(p,t);
     }
-    console.log(vents.overlapCount)
+    // console.log(vents.overlapCount)
     return vents.overlapCount[2];
 }
 
@@ -98,6 +98,6 @@ export const d5_2 = (path: string) => {
         const [p,t] = getLineEnds(line as string);
         vents.registerLine(p,t);
     }
-    console.log(vents.overlapCount)
+    // console.log(vents.overlapCount)
     return vents.overlapCount[2];
 }

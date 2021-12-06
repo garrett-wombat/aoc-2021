@@ -7,7 +7,7 @@ test("d5 - test", async () => {
 
 test("d5 ", async () => {
     const val = d5("input.txt");
-    console.log("d5 p1", val);
+    // console.log("d5 p1", val);
     expect(val).toEqual(4993);
 })
 
@@ -18,6 +18,6 @@ test("d5 - test - diagonal", async () => {
 
 test("d5", async () => {
     const val = d5_2("input.txt");
-    console.log("d5 p2", val);
+    // console.log("d5 p2", val);
     expect(val).toEqual(21101);
 })

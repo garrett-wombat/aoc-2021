@@ -7,7 +7,7 @@ test("d1 - window size 1", async () => {
 
 test("d1 - window size 1 - guess", async () => {
     const test = d1("input.txt", 1);
-    console.log("d1 p1", test);
+    // console.log("d1 p1", test);
     expect(test).toEqual(1548);
 })
 
@@ -18,6 +18,6 @@ test("d1 - window size 3", async () => {
 
 test("d1 - window size 3 - guess", async () => {
     const test = d1("input.txt", 3);
-    console.log("d1 p2", test);
+    // console.log("d1 p2", test);
     expect(test).toEqual(1589)
 })
