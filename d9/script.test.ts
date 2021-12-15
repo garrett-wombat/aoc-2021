@@ -7,7 +7,7 @@ test("d - test", async () => {
 
 test("d ", async () => {
     const val = d("input.txt");
-    console.log("d p1", val);
+    // console.log("d p1", val);
     expect(val).toEqual(480);
 })
 
@@ -18,6 +18,6 @@ test("d - test ", async () => {
 
 test("d", async () => {
     const val = d_2("input.txt");
-    console.log("d p2", val);
-    expect(val).toEqual(undefined);
+    // console.log("d p2", val);
+    expect(val).toEqual(1045660);
 })

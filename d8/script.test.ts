@@ -8,7 +8,7 @@ test("d - test", async () => {
 
 test("d ", async () => {
     const val = d_1("input.txt");
-    console.log("d p1", val);
+    // console.log("d p1", val);
     expect(val).toEqual(245);
 })
 
@@ -34,7 +34,6 @@ test("decode check", async () => {
 test("decode this", async () => {
     let mapp = Array(7).fill(null);
     const shouldBeTrue =  decodeNumbers(0, mapp, defaultCodes)
-    console.log(mapp)
     expect(shouldBeTrue).toEqual(true); 
 })
 
@@ -43,7 +42,6 @@ test("recursive check", async () => {
     // b=> c
     const scrable = ["abcefg", "bf", "abdeg", "abdfg", "bcdf", "acdfg", "acdefg", "abf", "abcdefg", "abcdfg"];
     const shouldBeTrue =  decodeNumbers(0, cypher, scrable)
-    console.log(cypher);
     expect(shouldBeTrue).toEqual(true); 
 })
 
@@ -59,6 +57,6 @@ test("d - test ", async () => {
 
 test("d", async () => {
     const val = d_2("input.txt");
-    console.log("d p2", val);
+    // console.log("d p2", val);
     expect(val).toEqual(983026);
 })
